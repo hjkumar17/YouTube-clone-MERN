@@ -1,9 +1,9 @@
-require("dotenv").config()
+require("dotenv").config();
 const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_user}:${process.env.DB_password}@cluster0.f9aqief.mongodb.net/${process.env.DB_name}?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_user}:${process.env.DB_password}@youtube-clone-cluster.04gsisy.mongodb.net/?retryWrites=true&w=majority&appName=${process.env.DB_name}`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

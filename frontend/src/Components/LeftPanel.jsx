@@ -37,7 +37,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { MdVideoLibrary } from "react-icons/md";
 
 function LeftPanel() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:3000"
   const [menuClicked, setMenuClicked] = useState(() => {
     const menu = localStorage.getItem("menuClicked");
     return menu ? JSON.parse(menu) : false;

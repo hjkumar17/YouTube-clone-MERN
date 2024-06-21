@@ -14,7 +14,7 @@ import Zoom from "@mui/material/Zoom";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function AccountPop() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:3000"
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");
