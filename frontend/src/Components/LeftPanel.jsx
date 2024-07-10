@@ -151,9 +151,9 @@ function LeftPanel() {
         // console.log(error.message);
       }
     };
-    const interval = setInterval(getSubscriptions, 100);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getSubscriptions, 100);
+    getSubscriptions()
+    // return () => clearInterval(interval);
   }, [Email]);
 
   useEffect(() => {
@@ -170,9 +170,9 @@ function LeftPanel() {
         // console.log(error.message);
       }
     };
-    const interval = setInterval(getPlaylistData, 100);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getPlaylistData, 100);
+    getPlaylistData()
+    // return () => clearInterval(interval);
   }, [Email]);
 
   useEffect(() => {
@@ -190,9 +190,9 @@ function LeftPanel() {
       }
     };
 
-    const interval = setInterval(GetSavedPlaylist, 250);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(GetSavedPlaylist, 250);
+    GetSavedPlaylist()
+    // return () => clearInterval(interval);
   }, [Email]);
 
   useEffect(() => {

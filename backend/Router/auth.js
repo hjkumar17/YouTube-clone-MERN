@@ -38,9 +38,9 @@ auth.post("/signup", async (req, res) => {
     });
 
     const mailOptions = {
-      from: "admin@shubho.youtube.app",
+      from: "admin@hjs.youtube.app",
       to: email,
-      subject: "Welcome to Shubho's YouTube Clone!",
+      subject: "Welcome to hj's YouTube Clone!",
       html: `
         <div style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
           <h1 style="color: #333;">Welcome to Shubho's YouTube Clone!</h1>

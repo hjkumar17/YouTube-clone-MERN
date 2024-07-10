@@ -54,9 +54,9 @@ function LikeVideos() {
       }
     };
 
-    const interval = setInterval(getLikeVideos, 100);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getLikeVideos, 100);
+    getLikeVideos()
+    // return () => clearInterval(interval);
   }, [email]);
 
   useEffect(() => {

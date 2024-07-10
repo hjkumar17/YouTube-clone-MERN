@@ -250,9 +250,9 @@ function Playlists() {
         // console.log("Error fetching user data:", error.message);
       }
     };
-    const interval = setInterval(GetSavedPlaylistData, 250);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(GetSavedPlaylistData, 250);
+    GetSavedPlaylistData()
+    // return () => clearInterval(interval);
   }, [id, Email]);
 
   //POST REQUEST

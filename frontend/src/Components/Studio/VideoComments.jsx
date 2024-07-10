@@ -150,9 +150,9 @@ function VideoComments() {
         // console.log(error.message);
       }
     };
-    const interval = setInterval(getComment, 100);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getComment, 100);
+    getComment()
+    // return () => clearInterval(interval);
   }, [id]);
 
   const LikeComment = async (id, commentId) => {

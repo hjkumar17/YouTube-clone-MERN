@@ -137,10 +137,10 @@ function OtherChannel() {
         // console.log(error.message);
       }
     };
+    getSubscribers()
+    // const interval = setInterval(getSubscribers, 200);
 
-    const interval = setInterval(getSubscribers, 200);
-
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [Email]);
 
   useEffect(() => {
@@ -204,10 +204,10 @@ function OtherChannel() {
         // console.log(error.message);
       }
     };
+    checkSubscription()
+    // const interval = setInterval(checkSubscription, 200);
 
-    const interval = setInterval(checkSubscription, 200);
-
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [id, newEmail]);
 
   const getUsername = (email) => {

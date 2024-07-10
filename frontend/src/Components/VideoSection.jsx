@@ -355,9 +355,9 @@ function VideoSection() {
       }
     };
 
-    const interval = setInterval(getLikes, 300);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getLikes, 300);
+    getLikes()
+    // return () => clearInterval(interval);
   }, [id]);
 
   useEffect(() => {
@@ -378,9 +378,9 @@ function VideoSection() {
         //console.log(error.message);
       }
     };
-    const interval = setInterval(LikeExists, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(LikeExists, 200);
+    LikeExists()
+    // return () => clearInterval(interval);
   }, [email, id]);
 
   useEffect(() => {
@@ -398,9 +398,9 @@ function VideoSection() {
       }
     };
 
-    const interval = setInterval(CommentLikes, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(CommentLikes, 200);
+    CommentLikes()
+    // return () => clearInterval(interval);
   }, [id]);
 
   useEffect(() => {
@@ -422,9 +422,9 @@ function VideoSection() {
       }
     };
 
-    const interval = setInterval(getWatchlater, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getWatchlater, 200);
+    getWatchlater()
+    // return () => clearInterval(interval);
   });
 
   useEffect(() => {
@@ -441,9 +441,9 @@ function VideoSection() {
         //console.log(error.message);
       }
     };
-    const interval = setInterval(getComments, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getComments, 200);
+    getComments()
+    // return () => clearInterval(interval);
   }, [id]);
 
   useEffect(() => {
@@ -522,9 +522,9 @@ function VideoSection() {
       }
     };
 
-    const interval = setInterval(checkSubscription, 400);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(checkSubscription, 400);
+    checkSubscription()
+    // return () => clearInterval(interval);
   }, [channelID, email]);
 
   useEffect(() => {
@@ -559,10 +559,10 @@ function VideoSection() {
         //console.log(error.message);
       }
     };
+    getPlaylists()
+    // const interval = setInterval(getPlaylists, 400);
 
-    const interval = setInterval(getPlaylists, 400);
-
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [email]);
 
   useEffect(() => {
@@ -580,9 +580,9 @@ function VideoSection() {
       }
     };
 
-    const interval = setInterval(getVideoAvailableInPlaylist, 400);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getVideoAvailableInPlaylist, 400);
+    getVideoAvailableInPlaylist()
+    // return () => clearInterval(interval);
   }, [email, id]);
 
   useEffect(() => {
@@ -599,10 +599,10 @@ function VideoSection() {
         //console.log(error.message);
       }
     };
+    getHeartComments()
+    // const interval = setInterval(getHeartComments, 400);
 
-    const interval = setInterval(getHeartComments, 400);
-
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [email, id]);
 
   useEffect(() => {

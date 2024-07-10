@@ -93,9 +93,10 @@ function FeaturedChannels(prop) {
         // console.log(error.message);
       }
     };
-    const interval = setInterval(getFeaturedChannels, 100);
+    getFeaturedChannels()
+    // const interval = setInterval(getFeaturedChannels, 100);
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [prop.newmail]);
 
   //POST REQUESTS

@@ -117,9 +117,9 @@ function SearchResults() {
       }
     };
 
-    const interval = setInterval(getOtherChannel, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getOtherChannel, 200);
+    getOtherChannel()
+    // return () => clearInterval(interval);
   }, [channelID]);
 
   useEffect(() => {
@@ -160,9 +160,9 @@ function SearchResults() {
       }
     };
 
-    const interval = setInterval(checkSubscription, 100);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(checkSubscription, 100);
+    checkSubscription()
+    // return () => clearInterval(interval);
   }, [channelID, myemail]);
 
   //POST REQUESTS

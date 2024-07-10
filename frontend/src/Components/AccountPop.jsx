@@ -95,9 +95,9 @@ function AccountPop() {
       }
     };
 
-    const interval = setInterval(getChannel, 200);
-
-    return () => clearInterval(interval);
+    // const interval = setInterval(getChannel, 200);
+    getChannel()
+    // return () => clearInterval(interval);
   }, [email]);
 
   return (

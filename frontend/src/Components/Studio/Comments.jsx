@@ -163,9 +163,9 @@ function Comments() {
         // Handle error
       }
     };
-
-    const interval = setInterval(getComments, 500);
-    return () => clearInterval(interval);
+    getComments()
+    // const interval = setInterval(getComments, 500);
+    // return () => clearInterval(interval);
   }, [Email]);
 
   const LikeComment = async (id, commentId) => {
